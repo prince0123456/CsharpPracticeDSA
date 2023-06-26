@@ -28,15 +28,30 @@ namespace ConsoleApp1
             //}
             //finally { Console.WriteLine("Cleaning block");
             //}
-              StringBuilder sb=new StringBuilder("Random Text");
-            StringBuilder sb2 = new StringBuilder("More stuff is very imp", 256);
-            string str = "Prince";
-            Console.WriteLine(sb.ToString());
-            sb.Append(str);
+            //StringBuilder sb = new StringBuilder("Random Text");
+            //StringBuilder sb2 = new StringBuilder("More stuff is very imp", 256);
+            //string str = "Prince";
+            //Console.WriteLine(sb.ToString());
+            //sb.Append(str);
             //sb.Clear();
-            Console.WriteLine(sb.ToString());
+            //Console.WriteLine(sb.ToString());
+            int  num1 = 5;
+            int num2  = 25;
+            Console.WriteLine("Before Swap: {0} num2 : {1}",num1,num2);
+            Swap(ref num1,ref num2);
+            Console.WriteLine("after Swap: {0} num2 : {1}", num1, num2);
         }
+        public static void Swap(ref int num1,ref int num2 )
+        {
+            int temp = num1;
+            num1 = num2;
+            num2 = temp;
 
+        }
+        static double GetSum(double x=1,double y=1) 
+        {
+            return (x + y);
+        }
         static string ReverseString(string str)
         {
             char[] charArray = str.ToCharArray();
